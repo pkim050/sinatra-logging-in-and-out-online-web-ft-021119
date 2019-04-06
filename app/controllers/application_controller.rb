@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
 
   post '/login' do
     @user = nil
-    @user = User.find(params[:username], params[:password])
+    @user = User.find_by(params[:username], params[:password])
     if @user == nil
       erb :error
     else
