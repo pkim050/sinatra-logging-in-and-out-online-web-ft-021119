@@ -1,8 +1,7 @@
 class Helpers
 
   def self.current_user(hash)
-    temp = self.find(hash[:id])
-    temp.username
+    User.find(hash[:id])
   end
 
   def self.is_logged_in?(hash)
