@@ -6,6 +6,6 @@ class Helpers
   end
 
   def self.is_logged_in?(hash)
-    
+
   end
 end
