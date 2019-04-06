@@ -1,10 +1,11 @@
 class Helpers
 
-  def self.current_user
-
+  def self.current_user(hash)
+    temp = self.find(hash.id)
+    temp.username
   end
 
-  def self.is_logged_in?
-
+  def self.is_logged_in?(hash)
+    
   end
 end
